@@ -1,0 +1,53 @@
+#itemHolder {
+    margin-top: 10px;
+}
+
+#submitBtn {
+    margin-left: 6px;
+}
+
+#inputHolder {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-size: 16px;
+}
+
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    word-break: keep-all;
+}
+
+button:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 2px;
+    width: 500px;
+    border: solid 1px lightgray;
+    border-radius: 2px;
+
+    font-size: 18px;
+    word-break: break-all;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Todo-list",
+  "version": "1.0.0",
+  "dependencies": {
+    "react-dom": "^18.0.0"
+  }
+}
