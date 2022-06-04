@@ -1,0 +1,17 @@
+<div>
+  <h1>{{recipes[id].name}}</h1>
+  <img src={{recipes[id].imagePath}} alt="Banana">
+  <h2>How to make:</h2>
+  <pre>{{recipes[id].steps}}</pre>
+</div>
+
+<h2>Ingredients</h2>
+<div class="item" *ngFor="let item of recipes[id].ingredients; let i = index">
+  <div>
+    <label>{{item.name}}</label>
+    -
+    <label>{{item.amount}}</label>
+  </div>
+  <button (click)="addItem(item)">Add to shopping cart</button>
+</div>
+

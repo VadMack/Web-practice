@@ -1,0 +1,17 @@
+<div id="inputHolder">
+  Name:<input [(ngModel)]="name">
+  Amount:<input [(ngModel)]="amount"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+  <button (click)="addItem()">Add</button>
+</div>
+
+
+<div class="item" *ngFor="let item of items; let i = index">
+  <div>
+    <label>{{item.name}}</label>
+    -
+    <label>{{item.amount}}</label>
+  </div>
+  <button (click)="deleteItem(i)">Delete</button>
+</div>
+
